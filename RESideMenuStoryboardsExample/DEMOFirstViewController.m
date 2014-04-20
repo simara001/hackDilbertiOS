@@ -45,7 +45,7 @@
     /* * * * * * * * * * * * * * * * *
      * Data For the UITableView
      * * * * * * * * * * * * * * * * */
-    eventArray = [@[@"hello", @"this", @"is", @"hello", @"this", @"is", @"hello", @"this", @"is"] mutableCopy];
+    eventArray = [@[@"Aerosmith", @"BBKing", @"King of Lions", @"SRVaughan", @"Guns N Roses", @"Nirvana", @"Dave Matthews Band", @"Eric Clapton", @"Oasis"] mutableCopy];
 
 }
 
@@ -80,8 +80,8 @@
      * * * * * * * * * * * * * * * * */
     NSString *imageTitle = [NSString stringWithFormat:@"Concert%d", (int)indexPath.row];
     cell.eventLogo.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageTitle]];
-    cell.eventName.text = @"Aerosmith";
-    cell.eventCapacity.text = @"40K";
+    cell.eventName.text = eventArray[indexPath.row];
+    cell.eventCapacity.text = @"2K";
     
     /* * * * * * * * * * * * * * * * *
      * Cell's Buttons Actions

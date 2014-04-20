@@ -7,6 +7,9 @@
 //
 
 #import "PlannerAssistantViewController.h"
+#import "PersonsTableViewCell.h"
+#import "UIColor+coolColors.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface PlannerAssistantViewController () {
     __strong NSMutableArray *eventArray;
@@ -27,6 +30,12 @@
     _request.delegate = self;
     
     [_request doGet:@"checkin"];
+    
+    /* * * * * * * * * * * * * * * * *
+     * Format
+     * * * * * * * * * * * * * * * * */
+    self.view.backgroundColor = [UIColor colorWithRed:246./255. green:246./255. blue:246./255. alpha:1.0];
+    self.eventTable.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark - UITableViewDatasource & UITableViewDelegate
@@ -38,10 +47,35 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    PersonsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
     
-    // Configure the cell...
-    cell.textLabel.text = [[eventArray objectAtIndex:indexPath.row] objectForKey:@"first"];
+    /* * * * * * * * * * * * * * * * *
+     * Cell Format
+     * * * * * * * * * * * * * * * * */
+    [cell.personImage.layer setCornerRadius:cell.personImage.frame.size.width/2];
+    [cell.personImage.layer setBorderColor:[UIColor coolGray].CGColor];
+    [cell.personImage.layer setBorderWidth:2.0];
+    
+    /* * * * * * * * * * * * * * * * *
+     * Image
+     * * * * * * * * * * * * * * * * */
+    NSString *imageName;
+    if (indexPath.row < 10) {
+        imageName = [NSString stringWithFormat:@"Contact%d", (int)indexPath.row + 1];
+    } else {
+        imageName = @"DefautlPerson";
+    }
+    cell.personImage.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageName]];
+    
+    /* * * * * * * * * * * * * * * * *
+     * Cell Info
+     * * * * * * * * * * * * * * * * */
+    cell.background.backgroundColor = [UIColor whiteColor];
+    cell.personFirstName.text = eventArray[indexPath.row][@"first"];
+    cell.personLastName.text = eventArray[indexPath.row][@"last"];
+    cell.personEmail.text = eventArray[indexPath.row][@"email"];
     return cell;
 }
 

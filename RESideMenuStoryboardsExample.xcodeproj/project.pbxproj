@@ -30,6 +30,7 @@
 		7F814B3C1903824C004CFC8A /* PlannerAssistantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */; };
 		7F814B4B190437B4004CFC8A /* UIColor+coolColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */; };
 		7F814B4E19043914004CFC8A /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B4D19043914004CFC8A /* EventTableViewCell.m */; };
+		7F871AD1190468B10050CE45 /* PersonsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F871AD0190468B00050CE45 /* PersonsTableViewCell.m */; };
 		CC585FB4190436D600B595B4 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC585FB3190436D600B595B4 /* XYPieChart.m */; };
 		CC585FB81904370900B595B4 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC585FB71904370900B595B4 /* HTTPRequest.m */; };
 		CC585FBB1904374100B595B4 /* sinchronize.png in Resources */ = {isa = PBXBuildFile; fileRef = CC585FBA1904374100B595B4 /* sinchronize.png */; };
@@ -86,6 +87,8 @@
 		7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+coolColors.m"; sourceTree = "<group>"; };
 		7F814B4C19043914004CFC8A /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
 		7F814B4D19043914004CFC8A /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		7F871ACF190468B00050CE45 /* PersonsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonsTableViewCell.h; sourceTree = "<group>"; };
+		7F871AD0190468B00050CE45 /* PersonsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonsTableViewCell.m; sourceTree = "<group>"; };
 		CC585FB2190436D600B595B4 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
 		CC585FB3190436D600B595B4 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
 		CC585FB61904370900B595B4 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */,
 				7F814B4C19043914004CFC8A /* EventTableViewCell.h */,
 				7F814B4D19043914004CFC8A /* EventTableViewCell.m */,
+				7F871ACF190468B00050CE45 /* PersonsTableViewCell.h */,
+				7F871AD0190468B00050CE45 /* PersonsTableViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				7F814B311903423C004CFC8A /* RECommonFunctions.m in Sources */,
 				7F814B361903432D004CFC8A /* SigninViewController.m in Sources */,
 				7F814B391903823A004CFC8A /* PlannerStatisticsViewController.m in Sources */,
+				7F871AD1190468B10050CE45 /* PersonsTableViewCell.m in Sources */,
 				7F814B331903423C004CFC8A /* UIViewController+RESideMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
