@@ -16,8 +16,11 @@
 @implementation DEMOFirstViewController
 
 -(void)viewDidLoad {
-    SigninViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"signin"];
-    [self.navigationController presentViewController:controller animated:NO completion:nil];
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"role"] isEqualToString:@""]) {
+        SigninViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"signin"];
+        [self.navigationController presentViewController:controller animated:NO completion:nil];
+    }
+
 }
 
 - (IBAction)showMenu
