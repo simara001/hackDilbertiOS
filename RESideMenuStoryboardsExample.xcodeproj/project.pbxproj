@@ -28,12 +28,13 @@
 		7F814B361903432D004CFC8A /* SigninViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B351903432D004CFC8A /* SigninViewController.m */; };
 		7F814B391903823A004CFC8A /* PlannerStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */; };
 		7F814B3C1903824C004CFC8A /* PlannerAssistantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */; };
+		7F814B4B190437B4004CFC8A /* UIColor+coolColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */; };
+		7F814B4E19043914004CFC8A /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B4D19043914004CFC8A /* EventTableViewCell.m */; };
 		CC585FB4190436D600B595B4 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC585FB3190436D600B595B4 /* XYPieChart.m */; };
 		CC585FB81904370900B595B4 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC585FB71904370900B595B4 /* HTTPRequest.m */; };
 		CC585FBB1904374100B595B4 /* sinchronize.png in Resources */ = {isa = PBXBuildFile; fileRef = CC585FBA1904374100B595B4 /* sinchronize.png */; };
 		CC585FBD190438AB00B595B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC585FBC190438AB00B595B4 /* QuartzCore.framework */; };
-		7F814B4B190437B4004CFC8A /* UIColor+coolColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */; };
-		7F814B4E19043914004CFC8A /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B4D19043914004CFC8A /* EventTableViewCell.m */; };
+		CC585FBF190440E500B595B4 /* dona.png in Resources */ = {isa = PBXBuildFile; fileRef = CC585FBE190440E500B595B4 /* dona.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,16 +82,17 @@
 		7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlannerStatisticsViewController.m; sourceTree = "<group>"; };
 		7F814B3A1903824C004CFC8A /* PlannerAssistantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlannerAssistantViewController.h; sourceTree = "<group>"; };
 		7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlannerAssistantViewController.m; sourceTree = "<group>"; };
+		7F814B49190437B4004CFC8A /* UIColor+coolColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+coolColors.h"; sourceTree = "<group>"; };
+		7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+coolColors.m"; sourceTree = "<group>"; };
+		7F814B4C19043914004CFC8A /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		7F814B4D19043914004CFC8A /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 		CC585FB2190436D600B595B4 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
 		CC585FB3190436D600B595B4 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
 		CC585FB61904370900B595B4 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
 		CC585FB71904370900B595B4 /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
 		CC585FBA1904374100B595B4 /* sinchronize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinchronize.png; sourceTree = "<group>"; };
 		CC585FBC190438AB00B595B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7F814B49190437B4004CFC8A /* UIColor+coolColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+coolColors.h"; sourceTree = "<group>"; };
-		7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+coolColors.m"; sourceTree = "<group>"; };
-		7F814B4C19043914004CFC8A /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
-		7F814B4D19043914004CFC8A /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		CC585FBE190440E500B595B4 /* dona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dona.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				CC585FBA1904374100B595B4 /* sinchronize.png */,
+				CC585FBE190440E500B595B4 /* dona.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3076CDDA1809B47200527E6C /* Images.xcassets in Resources */,
+				CC585FBF190440E500B595B4 /* dona.png in Resources */,
 				3076CDCC1809B47200527E6C /* InfoPlist.strings in Resources */,
 				CC585FBB1904374100B595B4 /* sinchronize.png in Resources */,
 				3076CDD51809B47200527E6C /* Main.storyboard in Resources */,

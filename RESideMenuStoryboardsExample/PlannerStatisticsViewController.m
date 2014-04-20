@@ -28,7 +28,7 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
-    _maxAttendees = 350;
+    _maxAttendees = 100;
     
     self.slices = [NSMutableArray arrayWithCapacity:2];
     [_slices addObject:[NSNumber numberWithInt:0]];
@@ -45,7 +45,7 @@
     [self.pieChartLeft setLabelShadowColor:[UIColor blackColor]];
     
     self.sliceColors =[NSArray arrayWithObjects:
-                       [UIColor colorWithRed:246/255.0 green:155/255.0 blue:0/255.0 alpha:1],
+                       [UIColor colorWithRed:133/255.0f green:34/255.0f blue:251/255.0f alpha:1.0f],
                        [UIColor colorWithRed:129/255.0 green:195/255.0 blue:29/255.0 alpha:1],
                        [UIColor colorWithRed:62/255.0 green:173/255.0 blue:219/255.0 alpha:1],
                        [UIColor colorWithRed:229/255.0 green:66/255.0 blue:115/255.0 alpha:1],
