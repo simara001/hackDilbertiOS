@@ -23,4 +23,9 @@
     [self.sideMenuViewController presentMenuViewController];
 }
 
+- (IBAction)buttonWasPressed:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"We are in alpha" message:@"Hello there, wait this functionality very soon!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    [alert show];
+}
+
 @end

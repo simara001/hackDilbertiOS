@@ -56,7 +56,7 @@
             navigationController.viewControllers = @[[self.storyboard instantiateViewControllerWithIdentifier:@"secondController"]];
             [self.sideMenuViewController hideMenuViewController];
             break;
-        case 4: {
+        case 3: {
             NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
             [defaults setObject:@"" forKey:@"role"];
             [self.sideMenuViewController hideMenuViewController];

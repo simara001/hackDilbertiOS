@@ -12,5 +12,6 @@
 @interface DEMOSecondViewController : UIViewController
 
 - (IBAction)showMenu;
+- (IBAction)buttonWasPressed:(id)sender;
 
 @end
