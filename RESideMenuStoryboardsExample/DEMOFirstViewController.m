@@ -9,7 +9,7 @@
 #import "DEMOFirstViewController.h"
 #import "SigninViewController.h"
 #import "UIColor+coolColors.h"
-#import "EventsTableViewCell.h"
+#import "EventTableViewCell.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface DEMOFirstViewController () {
@@ -60,7 +60,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"cell";
-    EventsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    EventTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     /* * * * * * * * * * * * * * * * *
      * Border Radius
@@ -70,6 +70,8 @@
     [cell.background.layer setBorderColor:[UIColor coolGray].CGColor];
     [cell.background.layer setBorderWidth:1.0];
     [cell.eventLogo.layer setCornerRadius:cell.eventLogo.frame.size.width/2];
+    [cell.eventLogo.layer setBorderWidth:3.0];
+    [cell.eventLogo.layer setBorderColor:[UIColor coolGray].CGColor];
     
     /* * * * * * * * * * * * * * * * *
      * Cell Info
@@ -78,7 +80,19 @@
     cell.eventLogo.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageTitle]];
     cell.eventName.text = @"Aerosmith";
     cell.eventCapacity.text = @"40K";
+    
+    /* * * * * * * * * * * * * * * * *
+     * Cell's Buttons Actions
+     * * * * * * * * * * * * * * * * */
+
+    [cell.eventStatistics addTarget:self action:@selector(presentView:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.eventAllThePeople addTarget:self action:@selector(presentView:) forControlEvents:UIControlEventTouchUpInside];
+    
     return cell;
+}
+
+-(void)presentView: (UIButton *)button {
+    
 }
 
 

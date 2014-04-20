@@ -110,17 +110,17 @@
                                                             <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JjA-FZ-777">
-                                                            <rect key="frame" x="253" y="51" width="40" height="40"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <state key="normal" image="Persons">
-                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </state>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fyL-au-KUX">
+                                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fyL-au-KUX">
                                                             <rect key="frame" x="253" y="92" width="40" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" image="Statistics">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FCO-dP-JXI">
+                                                            <rect key="frame" x="253" y="51" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" image="Persons">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                         </button>
@@ -131,9 +131,11 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="background" destination="Ovd-4R-Azb" id="Z5E-Lw-XSc"/>
+                                            <outlet property="eventAllThePeople" destination="FCO-dP-JXI" id="AHX-Wq-kQw"/>
                                             <outlet property="eventCapacity" destination="c7Z-4q-OpT" id="BLc-cY-EaF"/>
                                             <outlet property="eventLogo" destination="QT2-RN-xci" id="y8V-Tx-JuL"/>
                                             <outlet property="eventName" destination="vaF-Ul-oDK" id="IM5-6N-bGj"/>
+                                            <outlet property="eventStatistics" destination="fyL-au-KUX" id="1YC-XI-ofQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

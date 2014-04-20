@@ -15,6 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *eventName;
 @property (weak, nonatomic) IBOutlet UILabel *eventCapacity;
 @property (weak, nonatomic) IBOutlet UIButton *eventStatistics;
-@property (weak, nonatomic) IBOutlet UIButton *eventPeople;
+@property (weak, nonatomic) IBOutlet UIButton *eventAllThePeople;
 
 @end
