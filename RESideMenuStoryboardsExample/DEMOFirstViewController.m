@@ -61,11 +61,20 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"cell";
     EventsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    /* * * * * * * * * * * * * * * * *
+     * Border Radius
+     * * * * * * * * * * * * * * * * */
     cell.backgroundColor = [UIColor clearColor];
     cell.background.backgroundColor = [UIColor whiteColor];
     [cell.background.layer setCornerRadius:4.0];
-    cell.eventLogo.backgroundColor = [UIColor coolGreen];
+
     [cell.eventLogo.layer setCornerRadius:cell.eventLogo.frame.size.width/2];
+    
+    /* * * * * * * * * * * * * * * * *
+     * Cell Info
+     * * * * * * * * * * * * * * * * */
+    cell.eventLogo.backgroundColor = [UIColor coolGreen];
     cell.eventName.text = @"Aerosmith";
     cell.eventCapacity.text = @"40K";
     return cell;
