@@ -39,7 +39,7 @@
             </objects>
             <point key="canvasLocation" x="923" y="298"/>
         </scene>
-        <!--First View Controller - Home Controller-->
+        <!--First View Controller - Events-->
         <scene sceneID="4d1-Jz-tGk">
             <objects>
                 <viewController storyboardIdentifier="firstController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jsP-Dz-DYG" customClass="DEMOFirstViewController" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                             </tableView>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Controller" id="HIf-bS-REK">
+                    <navigationItem key="navigationItem" title="Events" id="HIf-bS-REK">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="SZg-Pf-I50">
                             <connections>
                                 <action selector="showMenu" destination="jsP-Dz-DYG" id="Fp7-R0-lXj"/>
