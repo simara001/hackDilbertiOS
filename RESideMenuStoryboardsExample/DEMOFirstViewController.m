@@ -8,6 +8,7 @@
 
 #import "DEMOFirstViewController.h"
 #import "SigninViewController.h"
+#import "UIColor+coolColors.h"
 
 @interface DEMOFirstViewController () {
     __strong NSMutableArray *eventArray;
@@ -22,6 +23,8 @@
         SigninViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"signin"];
         [self.navigationController presentViewController:controller animated:NO completion:nil];
     }
+    self.view.backgroundColor = [UIColor coolBlue];
+    self.eventFeeder.backgroundColor = [UIColor clearColor];
     eventArray = [@[@"hello", @"this", @"is"] mutableCopy];
 
 }
@@ -40,7 +43,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    cell.backgroundColor = [UIColor clearColor];
     // Configure the cell...
     cell.textLabel.text = eventArray[indexPath.row];
     return cell;
