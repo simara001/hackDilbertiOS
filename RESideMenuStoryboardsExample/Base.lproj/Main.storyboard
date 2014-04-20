@@ -164,7 +164,7 @@
         <!--Planner Statistics View Controller-->
         <scene sceneID="FQL-1i-V58">
             <objects>
-                <viewController id="zcL-gq-eO7" customClass="PlannerStatisticsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="statistics" id="zcL-gq-eO7" customClass="PlannerStatisticsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P22-GS-eiG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -221,7 +221,7 @@
         <!--Planner Assistant View Controller-->
         <scene sceneID="7yk-xg-Ss5">
             <objects>
-                <viewController id="4Cm-YI-C7k" customClass="PlannerAssistantViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="persons" id="4Cm-YI-C7k" customClass="PlannerAssistantViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ak-52-HzW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

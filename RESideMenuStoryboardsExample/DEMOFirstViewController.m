@@ -10,6 +10,8 @@
 #import "SigninViewController.h"
 #import "UIColor+coolColors.h"
 #import "EventTableViewCell.h"
+#import "PlannerAssistantViewController.h"
+#import "PlannerStatisticsViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface DEMOFirstViewController () {
@@ -92,7 +94,14 @@
 }
 
 -(void)presentView: (UIButton *)button {
-    
+    if (button.tag == 0) {
+        PlannerAssistantViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"persons"];
+        [self.navigationController presentViewController:controller animated:YES completion:nil];
+    } else {
+        PlannerStatisticsViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"statistics"];
+        [self.navigationController presentViewController:controller animated:YES completion:nil];
+    }
+
 }
 
 
