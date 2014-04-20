@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
 
-@interface DEMOFirstViewController : UIViewController
+@interface DEMOFirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *eventFeeder;
 
 - (IBAction)showMenu;
 
