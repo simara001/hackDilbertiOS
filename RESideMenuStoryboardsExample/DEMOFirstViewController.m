@@ -9,7 +9,9 @@
 #import "DEMOFirstViewController.h"
 #import "SigninViewController.h"
 
-@interface DEMOFirstViewController ()
+@interface DEMOFirstViewController () {
+    __strong NSMutableArray *eventArray;
+}
 
 @end
 
@@ -20,6 +22,7 @@
         SigninViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"signin"];
         [self.navigationController presentViewController:controller animated:NO completion:nil];
     }
+    eventArray = [@[@"hello", @"this", @"is"] mutableCopy];
 
 }
 
@@ -31,7 +34,7 @@
 #pragma mark - UITableViewDatasource & UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return [eventArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -39,7 +42,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = @"Hello world!";
+    cell.textLabel.text = eventArray[indexPath.row];
     return cell;
 }
 
