@@ -67,8 +67,8 @@
      * * * * * * * * * * * * * * * * */
     cell.backgroundColor = [UIColor clearColor];
     cell.background.backgroundColor = [UIColor whiteColor];
-    [cell.background.layer setCornerRadius:4.0];
-
+    [cell.background.layer setBorderColor:[UIColor coolGray].CGColor];
+    [cell.background.layer setBorderWidth:1.0];
     [cell.eventLogo.layer setCornerRadius:cell.eventLogo.frame.size.width/2];
     
     /* * * * * * * * * * * * * * * * *

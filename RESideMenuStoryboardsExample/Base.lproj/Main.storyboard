@@ -110,6 +110,20 @@
                                                             <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JjA-FZ-777">
+                                                            <rect key="frame" x="253" y="51" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" image="Persons">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fyL-au-KUX">
+                                                            <rect key="frame" x="253" y="92" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" image="Statistics">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
@@ -371,6 +385,8 @@
         <image name="Button" width="445" height="74"/>
         <image name="DilbertIcon" width="315" height="267"/>
         <image name="DonutCircle" width="142" height="142"/>
+        <image name="Persons" width="45" height="45"/>
+        <image name="Statistics" width="45" height="45"/>
         <image name="TextField" width="445" height="74"/>
         <image name="sinchronize.png" width="512" height="512"/>
     </resources>
