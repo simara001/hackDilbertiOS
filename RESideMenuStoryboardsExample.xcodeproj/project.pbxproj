@@ -33,6 +33,7 @@
 		CC585FBB1904374100B595B4 /* sinchronize.png in Resources */ = {isa = PBXBuildFile; fileRef = CC585FBA1904374100B595B4 /* sinchronize.png */; };
 		CC585FBD190438AB00B595B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC585FBC190438AB00B595B4 /* QuartzCore.framework */; };
 		7F814B4B190437B4004CFC8A /* UIColor+coolColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */; };
+		7F814B4E19043914004CFC8A /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B4D19043914004CFC8A /* EventTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		CC585FBC190438AB00B595B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7F814B49190437B4004CFC8A /* UIColor+coolColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+coolColors.h"; sourceTree = "<group>"; };
 		7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+coolColors.m"; sourceTree = "<group>"; };
+		7F814B4C19043914004CFC8A /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		7F814B4D19043914004CFC8A /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,8 @@
 				7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */,
 				7F814B3A1903824C004CFC8A /* PlannerAssistantViewController.h */,
 				7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */,
+				7F814B4C19043914004CFC8A /* EventTableViewCell.h */,
+				7F814B4D19043914004CFC8A /* EventTableViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				CC585FB81904370900B595B4 /* HTTPRequest.m in Sources */,
 				7F814B4B190437B4004CFC8A /* UIColor+coolColors.m in Sources */,
 				3076CDCE1809B47200527E6C /* main.m in Sources */,
+				7F814B4E19043914004CFC8A /* EventTableViewCell.m in Sources */,
 				3076CDD21809B47200527E6C /* DEMOAppDelegate.m in Sources */,
 				3076CE051809B59E00527E6C /* DEMOSecondViewController.m in Sources */,
 				3076CE041809B59E00527E6C /* DEMORootViewController.m in Sources */,
