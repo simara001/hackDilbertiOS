@@ -14,4 +14,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *textPassword;
 
 - (IBAction)buttonWasPressed:(id)sender;
+- (IBAction)tapWasEnabled:(id)sender;
 @end

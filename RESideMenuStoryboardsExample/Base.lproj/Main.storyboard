@@ -129,6 +129,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlurBackground" id="7xI-cz-Lll">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eEl-8P-jLE" appends="YES" id="Enx-3A-dte"/>
+                                </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TextField" id="faF-qZ-UFp">
                                 <rect key="frame" x="50" y="110" width="220" height="35"/>
@@ -143,6 +147,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dL8-8T-lVA" id="Jvy-dm-ESw"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BmG-qS-Lgx">
                                 <rect key="frame" x="50" y="196" width="220" height="35"/>
@@ -164,9 +171,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dL8-8T-lVA" id="YXr-if-Tbq"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="eEl-8P-jLE" appends="YES" id="E3l-c9-EsC"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="textPassword" destination="rs3-V0-Kgj" id="Aj6-uO-nDj"/>
@@ -174,6 +187,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gi-2r-Qp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eEl-8P-jLE">
+                    <connections>
+                        <action selector="tapWasEnabled:" destination="dL8-8T-lVA" id="scl-uI-4Qf"/>
+                        <outlet property="delegate" destination="5yy-2V-xf3" id="jIr-JA-ASQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="957" y="1692"/>
         </scene>
