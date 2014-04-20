@@ -7,12 +7,18 @@
 //
 
 #import "DEMOFirstViewController.h"
+#import "SigninViewController.h"
 
 @interface DEMOFirstViewController ()
 
 @end
 
 @implementation DEMOFirstViewController
+
+-(void)viewDidLoad {
+    SigninViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"signin"];
+    [self.navigationController presentViewController:controller animated:NO completion:nil];
+}
 
 - (IBAction)showMenu
 {
