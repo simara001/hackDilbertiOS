@@ -9,6 +9,7 @@
 #import "DEMOMenuViewController.h"
 #import "DEMOFirstViewController.h"
 #import "DEMOSecondViewController.h"
+#import "SigninViewController.h"
 #import "UIViewController+RESideMenu.h"
 
 @interface DEMOMenuViewController ()
@@ -55,6 +56,11 @@
             navigationController.viewControllers = @[[self.storyboard instantiateViewControllerWithIdentifier:@"secondController"]];
             [self.sideMenuViewController hideMenuViewController];
             break;
+        case 4: {
+            [self.sideMenuViewController hideMenuViewController];
+            [navigationController presentViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"signin"] animated:YES completion:nil];
+            break;
+        }
         default:
             break;
     }
