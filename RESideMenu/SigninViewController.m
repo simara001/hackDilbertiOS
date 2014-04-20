@@ -36,7 +36,6 @@
                                               otherButtonTitles:nil, nil];
         [alert show];
     }
-    
 }
 
 - (IBAction)tapWasEnabled:(id)sender {

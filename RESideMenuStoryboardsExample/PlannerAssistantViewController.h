@@ -10,4 +10,6 @@
 
 @interface PlannerAssistantViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *eventTable;
+
 @end
