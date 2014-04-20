@@ -28,6 +28,7 @@
 		7F814B361903432D004CFC8A /* SigninViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B351903432D004CFC8A /* SigninViewController.m */; };
 		7F814B391903823A004CFC8A /* PlannerStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */; };
 		7F814B3C1903824C004CFC8A /* PlannerAssistantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */; };
+		7F814B4B190437B4004CFC8A /* UIColor+coolColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlannerStatisticsViewController.m; sourceTree = "<group>"; };
 		7F814B3A1903824C004CFC8A /* PlannerAssistantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlannerAssistantViewController.h; sourceTree = "<group>"; };
 		7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlannerAssistantViewController.m; sourceTree = "<group>"; };
+		7F814B49190437B4004CFC8A /* UIColor+coolColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+coolColors.h"; sourceTree = "<group>"; };
+		7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+coolColors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 				7F814B2E1903423C004CFC8A /* RESideMenu.m */,
 				7F814B2F1903423C004CFC8A /* UIViewController+RESideMenu.h */,
 				7F814B301903423C004CFC8A /* UIViewController+RESideMenu.m */,
+				7F814B49190437B4004CFC8A /* UIColor+coolColors.h */,
+				7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */,
 			);
 			path = RESideMenu;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				7F814B321903423C004CFC8A /* RESideMenu.m in Sources */,
 				3076CE021809B59E00527E6C /* DEMOMenuViewController.m in Sources */,
 				3076CE011809B59E00527E6C /* DEMOFirstViewController.m in Sources */,
+				7F814B4B190437B4004CFC8A /* UIColor+coolColors.m in Sources */,
 				3076CDCE1809B47200527E6C /* main.m in Sources */,
 				3076CDD21809B47200527E6C /* DEMOAppDelegate.m in Sources */,
 				3076CE051809B59E00527E6C /* DEMOSecondViewController.m in Sources */,
