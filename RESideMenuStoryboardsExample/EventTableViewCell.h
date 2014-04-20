@@ -11,7 +11,7 @@
 @interface EventTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIView *background;
-@property (weak, nonatomic) IBOutlet UIImageView *eventLogo;
+@property (weak, nonatomic) IBOutlet UIView *eventLogo;
 @property (weak, nonatomic) IBOutlet UILabel *eventName;
 @property (weak, nonatomic) IBOutlet UILabel *eventCapacity;
 @property (weak, nonatomic) IBOutlet UIButton *eventStatistics;

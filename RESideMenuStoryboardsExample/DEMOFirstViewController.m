@@ -9,6 +9,8 @@
 #import "DEMOFirstViewController.h"
 #import "SigninViewController.h"
 #import "UIColor+coolColors.h"
+#import "EventsTableViewCell.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface DEMOFirstViewController () {
     __strong NSMutableArray *eventArray;
@@ -30,17 +32,18 @@
     /* * * * * * * * * * * * * * * * *
      * UIView Customization
      * * * * * * * * * * * * * * * * */
-    self.view.backgroundColor = [UIColor coolLightGray];
+    self.view.backgroundColor = [UIColor colorWithRed:240/255. green:240./255. blue:240./255. alpha:1.0];
     self.eventFeeder.backgroundColor = [UIColor clearColor];
     [self.navigationController.navigationBar setBarTintColor:[UIColor coolPurple]];
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     [self.navigationController.navigationBar setTranslucent:YES];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+    self.eventFeeder.separatorColor = [UIColor clearColor];
     
     /* * * * * * * * * * * * * * * * *
      * Data For the UITableView
      * * * * * * * * * * * * * * * * */
-    eventArray = [@[@"hello", @"this", @"is"] mutableCopy];
+    eventArray = [@[@"hello", @"this", @"is", @"hello", @"this", @"is", @"hello", @"this", @"is"] mutableCopy];
 
 }
 
@@ -57,11 +60,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.contentView.backgroundColor = [UIColor clearColor];
+    EventsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     cell.backgroundColor = [UIColor clearColor];
-    // Configure the cell...
-    cell.textLabel.text = eventArray[indexPath.row];
+    cell.background.backgroundColor = [UIColor whiteColor];
+    [cell.background.layer setCornerRadius:4.0];
+    cell.eventLogo.backgroundColor = [UIColor coolGreen];
+    [cell.eventLogo.layer setCornerRadius:cell.eventLogo.frame.size.width/2];
+    cell.eventName.text = @"Aerosmith";
+    cell.eventCapacity.text = @"40K";
     return cell;
 }
 
