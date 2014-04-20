@@ -26,6 +26,8 @@
 		7F814B321903423C004CFC8A /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B2E1903423C004CFC8A /* RESideMenu.m */; };
 		7F814B331903423C004CFC8A /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B301903423C004CFC8A /* UIViewController+RESideMenu.m */; };
 		7F814B361903432D004CFC8A /* SigninViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B351903432D004CFC8A /* SigninViewController.m */; };
+		7F814B391903823A004CFC8A /* PlannerStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */; };
+		7F814B3C1903824C004CFC8A /* PlannerAssistantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		7F814B301903423C004CFC8A /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
 		7F814B341903432D004CFC8A /* SigninViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SigninViewController.h; path = ../RESideMenu/SigninViewController.h; sourceTree = "<group>"; };
 		7F814B351903432D004CFC8A /* SigninViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SigninViewController.m; path = ../RESideMenu/SigninViewController.m; sourceTree = "<group>"; };
+		7F814B371903823A004CFC8A /* PlannerStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlannerStatisticsViewController.h; sourceTree = "<group>"; };
+		7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlannerStatisticsViewController.m; sourceTree = "<group>"; };
+		7F814B3A1903824C004CFC8A /* PlannerAssistantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlannerAssistantViewController.h; sourceTree = "<group>"; };
+		7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlannerAssistantViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,10 @@
 				3076CE001809B59E00527E6C /* DEMOSecondViewController.m */,
 				7F814B341903432D004CFC8A /* SigninViewController.h */,
 				7F814B351903432D004CFC8A /* SigninViewController.m */,
+				7F814B371903823A004CFC8A /* PlannerStatisticsViewController.h */,
+				7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */,
+				7F814B3A1903824C004CFC8A /* PlannerAssistantViewController.h */,
+				7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -276,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F814B3C1903824C004CFC8A /* PlannerAssistantViewController.m in Sources */,
 				7F814B321903423C004CFC8A /* RESideMenu.m in Sources */,
 				3076CE021809B59E00527E6C /* DEMOMenuViewController.m in Sources */,
 				3076CE011809B59E00527E6C /* DEMOFirstViewController.m in Sources */,
@@ -285,6 +296,7 @@
 				3076CE041809B59E00527E6C /* DEMORootViewController.m in Sources */,
 				7F814B311903423C004CFC8A /* RECommonFunctions.m in Sources */,
 				7F814B361903432D004CFC8A /* SigninViewController.m in Sources */,
+				7F814B391903823A004CFC8A /* PlannerStatisticsViewController.m in Sources */,
 				7F814B331903423C004CFC8A /* UIViewController+RESideMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
