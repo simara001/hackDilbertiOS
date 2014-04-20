@@ -30,6 +30,7 @@
     
     // Do any additional setup after loading the view.
     _maxAttendees = 100;
+    _attendees = 0;
     
     self.slices = [NSMutableArray arrayWithCapacity:2];
     [_slices addObject:[NSNumber numberWithInt:0]];
@@ -68,12 +69,14 @@
 //HTTP Request Protocol Methods
 -(void) didReceiveResponse:(NSDictionary *)serverResponse
 {
-    int attendees = [[serverResponse objectForKey:@"attendees"] intValue];
-    [self refreshPieChart:attendees];
+    if(_attendees < _maxAttendees){
+        _attendees = [[serverResponse objectForKey:@"attendees"] intValue];
+        [self refreshPieChart];
+    }
 }
 
--(void) refreshPieChart:(int) attendees{
-    int ocupancy = (attendees * 100) / _maxAttendees;
+-(void) refreshPieChart{
+    int ocupancy = (_attendees * 100) / _maxAttendees;
     int vacancy = 100 - ocupancy;
     _ocupancyLabel.text = [NSString stringWithFormat:@"%d%%", ocupancy];
     [self.slices setObject:[NSNumber numberWithInt:ocupancy] atIndexedSubscript:0];
