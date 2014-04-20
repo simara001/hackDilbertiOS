@@ -8,32 +8,36 @@
 
 #import "PlannerAssistantViewController.h"
 
-@interface PlannerAssistantViewController ()
+@interface PlannerAssistantViewController () {
+    __strong NSMutableArray *eventArray;
+}
 
 @end
 
 @implementation PlannerAssistantViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    eventArray = [@[@"hello", @"world", @"I'm", @"Miguel"] mutableCopy];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDatasource & UITableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [eventArray count];
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+    cell.textLabel.text = eventArray[indexPath.row];
+    return cell;
+}
+
 
 /*
 #pragma mark - Navigation

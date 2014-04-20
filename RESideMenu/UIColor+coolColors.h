@@ -15,6 +15,7 @@
 + (UIColor *) coolYellow;
 + (UIColor *) coolRed;
 + (UIColor *) coolGray;
++ (UIColor *) coolLightGray;
 + (UIColor *) coolDarkBlue;
 + (UIColor *) coolPurple;
 
