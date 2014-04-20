@@ -19,8 +19,5 @@
 @property int maxAttendees;
 @property int attendees;
 @property (strong, nonatomic) IBOutlet UILabel *ocupancyLabel;
-@property (strong, nonatomic) IBOutlet UIButton *refreshBtn;
-
-- (IBAction)refreshBtnPressed:(id)sender;
 
 @end
