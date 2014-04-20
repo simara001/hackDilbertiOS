@@ -28,6 +28,10 @@
 		7F814B361903432D004CFC8A /* SigninViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B351903432D004CFC8A /* SigninViewController.m */; };
 		7F814B391903823A004CFC8A /* PlannerStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */; };
 		7F814B3C1903824C004CFC8A /* PlannerAssistantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */; };
+		CC585FB4190436D600B595B4 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC585FB3190436D600B595B4 /* XYPieChart.m */; };
+		CC585FB81904370900B595B4 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC585FB71904370900B595B4 /* HTTPRequest.m */; };
+		CC585FBB1904374100B595B4 /* sinchronize.png in Resources */ = {isa = PBXBuildFile; fileRef = CC585FBA1904374100B595B4 /* sinchronize.png */; };
+		CC585FBD190438AB00B595B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC585FBC190438AB00B595B4 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,12 @@
 		7F814B381903823A004CFC8A /* PlannerStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlannerStatisticsViewController.m; sourceTree = "<group>"; };
 		7F814B3A1903824C004CFC8A /* PlannerAssistantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlannerAssistantViewController.h; sourceTree = "<group>"; };
 		7F814B3B1903824C004CFC8A /* PlannerAssistantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlannerAssistantViewController.m; sourceTree = "<group>"; };
+		CC585FB2190436D600B595B4 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		CC585FB3190436D600B595B4 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		CC585FB61904370900B595B4 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		CC585FB71904370900B595B4 /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		CC585FBA1904374100B595B4 /* sinchronize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinchronize.png; sourceTree = "<group>"; };
+		CC585FBC190438AB00B595B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC585FBD190438AB00B595B4 /* QuartzCore.framework in Frameworks */,
 				3076CDC41809B47200527E6C /* CoreGraphics.framework in Frameworks */,
 				3076CDC61809B47200527E6C /* UIKit.framework in Frameworks */,
 				3076CDC21809B47200527E6C /* Foundation.framework in Frameworks */,
@@ -123,6 +134,7 @@
 		3076CDC01809B47200527E6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC585FBC190438AB00B595B4 /* QuartzCore.framework */,
 				3076CDC11809B47200527E6C /* Foundation.framework */,
 				3076CDC31809B47200527E6C /* CoreGraphics.framework */,
 				3076CDC51809B47200527E6C /* UIKit.framework */,
@@ -134,6 +146,9 @@
 		3076CDC71809B47200527E6C /* RESideMenuStoryboardsExample */ = {
 			isa = PBXGroup;
 			children = (
+				CC585FB91904373A00B595B4 /* Images */,
+				CC585FB5190436FC00B595B4 /* HttpRequest */,
+				CC585FB1190436D600B595B4 /* XYPieChart */,
 				3076CDF61809B50100527E6C /* Controllers */,
 				3076CDD01809B47200527E6C /* DEMOAppDelegate.h */,
 				3076CDD11809B47200527E6C /* DEMOAppDelegate.m */,
@@ -187,6 +202,32 @@
 				7F814B301903423C004CFC8A /* UIViewController+RESideMenu.m */,
 			);
 			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		CC585FB1190436D600B595B4 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				CC585FB2190436D600B595B4 /* XYPieChart.h */,
+				CC585FB3190436D600B595B4 /* XYPieChart.m */,
+			);
+			path = XYPieChart;
+			sourceTree = "<group>";
+		};
+		CC585FB5190436FC00B595B4 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CC585FB61904370900B595B4 /* HTTPRequest.h */,
+				CC585FB71904370900B595B4 /* HTTPRequest.m */,
+			);
+			name = HttpRequest;
+			sourceTree = "<group>";
+		};
+		CC585FB91904373A00B595B4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CC585FBA1904374100B595B4 /* sinchronize.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +309,7 @@
 			files = (
 				3076CDDA1809B47200527E6C /* Images.xcassets in Resources */,
 				3076CDCC1809B47200527E6C /* InfoPlist.strings in Resources */,
+				CC585FBB1904374100B595B4 /* sinchronize.png in Resources */,
 				3076CDD51809B47200527E6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,8 +330,10 @@
 			files = (
 				7F814B3C1903824C004CFC8A /* PlannerAssistantViewController.m in Sources */,
 				7F814B321903423C004CFC8A /* RESideMenu.m in Sources */,
+				CC585FB4190436D600B595B4 /* XYPieChart.m in Sources */,
 				3076CE021809B59E00527E6C /* DEMOMenuViewController.m in Sources */,
 				3076CE011809B59E00527E6C /* DEMOFirstViewController.m in Sources */,
+				CC585FB81904370900B595B4 /* HTTPRequest.m in Sources */,
 				3076CDCE1809B47200527E6C /* main.m in Sources */,
 				3076CDD21809B47200527E6C /* DEMOAppDelegate.m in Sources */,
 				3076CE051809B59E00527E6C /* DEMOSecondViewController.m in Sources */,
