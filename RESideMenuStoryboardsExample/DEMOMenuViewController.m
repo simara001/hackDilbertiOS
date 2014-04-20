@@ -57,6 +57,8 @@
             [self.sideMenuViewController hideMenuViewController];
             break;
         case 4: {
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            [defaults setObject:@"" forKey:@"role"];
             [self.sideMenuViewController hideMenuViewController];
             [navigationController presentViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"signin"] animated:YES completion:nil];
             break;

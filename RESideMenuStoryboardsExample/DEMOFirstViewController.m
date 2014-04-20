@@ -16,13 +16,32 @@
 @implementation DEMOFirstViewController
 
 -(void)viewDidLoad {
-    SigninViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"signin"];
-    [self.navigationController presentViewController:controller animated:NO completion:nil];
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"role"] isEqualToString:@""]) {
+        SigninViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"signin"];
+        [self.navigationController presentViewController:controller animated:NO completion:nil];
+    }
+
 }
 
 - (IBAction)showMenu
 {
     [self.sideMenuViewController presentMenuViewController];
 }
+
+#pragma mark - UITableViewDatasource & UITableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 5;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+    cell.textLabel.text = @"Hello world!";
+    return cell;
+}
+
 
 @end

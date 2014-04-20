@@ -200,6 +200,8 @@
 				7F814B2E1903423C004CFC8A /* RESideMenu.m */,
 				7F814B2F1903423C004CFC8A /* UIViewController+RESideMenu.h */,
 				7F814B301903423C004CFC8A /* UIViewController+RESideMenu.m */,
+				7F814B49190437B4004CFC8A /* UIColor+coolColors.h */,
+				7F814B4A190437B4004CFC8A /* UIColor+coolColors.m */,
 			);
 			path = RESideMenu;
 			sourceTree = "<group>";
