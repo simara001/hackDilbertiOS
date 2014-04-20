@@ -7,6 +7,7 @@
 //
 
 #import "PlannerStatisticsViewController.h"
+#import "UIColor+coolColors.h"
 
 @interface PlannerStatisticsViewController ()
 
@@ -45,8 +46,8 @@
     [self.pieChartLeft setLabelShadowColor:[UIColor blackColor]];
     
     self.sliceColors =[NSArray arrayWithObjects:
-                       [UIColor colorWithRed:133/255.0f green:34/255.0f blue:251/255.0f alpha:1.0f],
-                       [UIColor colorWithRed:129/255.0 green:195/255.0 blue:29/255.0 alpha:1],
+                       [UIColor coolPurple],
+                       [UIColor coolGreen],
                        [UIColor colorWithRed:62/255.0 green:173/255.0 blue:219/255.0 alpha:1],
                        [UIColor colorWithRed:229/255.0 green:66/255.0 blue:115/255.0 alpha:1],
                        [UIColor colorWithRed:148/255.0 green:141/255.0 blue:139/255.0 alpha:1],nil];
