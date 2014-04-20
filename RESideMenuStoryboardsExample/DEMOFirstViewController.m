@@ -74,7 +74,8 @@
     /* * * * * * * * * * * * * * * * *
      * Cell Info
      * * * * * * * * * * * * * * * * */
-    cell.eventLogo.backgroundColor = [UIColor coolGreen];
+    NSString *imageTitle = [NSString stringWithFormat:@"Concert%d", (int)indexPath.row];
+    cell.eventLogo.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageTitle]];
     cell.eventName.text = @"Aerosmith";
     cell.eventCapacity.text = @"40K";
     return cell;
