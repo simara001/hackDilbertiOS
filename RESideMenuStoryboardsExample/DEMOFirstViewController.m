@@ -96,10 +96,10 @@
 -(void)presentView: (UIButton *)button {
     if (button.tag == 0) {
         PlannerAssistantViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"persons"];
-        [self.navigationController presentViewController:controller animated:YES completion:nil];
+        [self.navigationController pushViewController:controller animated:YES];
     } else {
         PlannerStatisticsViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"statistics"];
-        [self.navigationController presentViewController:controller animated:YES completion:nil];
+        [self.navigationController pushViewController:controller animated:YES];
     }
 
 }
