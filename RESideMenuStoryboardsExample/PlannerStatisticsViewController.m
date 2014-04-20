@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
-    _maxAttendees = 100;
+    _maxAttendees = 2000;
     _attendees = 0;
     
     self.slices = [NSMutableArray arrayWithCapacity:2];
@@ -57,6 +57,17 @@
     _request = [HTTPRequest new];
     _request.delegate = self;
     
+    
+    
+    
+    // Create a dispatch source that'll act as a timer on the concurrent queue
+    // You'll need to store this somewhere so you can suspend and remove it later on
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(triggerRequest) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    
+}
+
+- (void) triggerRequest{
     [_request doGet:@"checkin/attendees"];
 }
 
@@ -105,10 +116,6 @@
 - (UIColor *)pieChart:(XYPieChart *)pieChart colorForSliceAtIndex:(NSUInteger)index
 {
     return [self.sliceColors objectAtIndex:(index % self.sliceColors.count)];
-}
-
-- (IBAction)refreshBtnPressed:(id)sender {
-    [_request doGet:@"checkin/attendees"];
 }
 
 @end
