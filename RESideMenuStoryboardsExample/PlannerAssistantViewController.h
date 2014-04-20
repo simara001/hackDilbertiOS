@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTTPRequest.h"
 
-@interface PlannerAssistantViewController : UIViewController
+@interface PlannerAssistantViewController : UIViewController <HTTPRequestDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *eventTable;
+@property (nonatomic, strong) HTTPRequest *request;
 
 @end

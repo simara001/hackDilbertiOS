@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol HTTPRequestDelegate<NSObject>
--(void) didReceiveResponse:(NSDictionary *)serverResponse;
+-(void) didReceiveResponse:(NSArray *)serverResponse;
 @end
 
 @interface HTTPRequest : NSObject <NSURLConnectionDelegate>

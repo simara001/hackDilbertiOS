@@ -20,7 +20,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    eventArray = [@[@"hello", @"world", @"I'm", @"Miguel"] mutableCopy];
+    eventArray = [[NSMutableArray alloc] init];
+    
+    // Init HTTP
+    _request = [HTTPRequest new];
+    _request.delegate = self;
+    
+    [_request doGet:@"checkin"];
 }
 
 #pragma mark - UITableViewDatasource & UITableViewDelegate
@@ -30,14 +36,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     static NSString *CellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = eventArray[indexPath.row];
+    cell.textLabel.text = [[eventArray objectAtIndex:indexPath.row] objectForKey:@"first"];
     return cell;
 }
 
+//HTTP Request Protocol Methods
+-(void) didReceiveResponse:(NSArray *)serverResponse
+{
+    [eventArray addObjectsFromArray:serverResponse];
+    [self.eventTable reloadData];
+    //NSLog(@"%@", serverResponse);
+}
 
 /*
 #pragma mark - Navigation

@@ -68,7 +68,7 @@ NSMutableData *webData;
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     NSError *error;
-    NSDictionary *response = [NSJSONSerialization JSONObjectWithData:webData options:kNilOptions error:&error];
+    NSArray *response = [NSJSONSerialization JSONObjectWithData:webData options:kNilOptions error:&error];
     
     [_delegate didReceiveResponse:response];
 }
