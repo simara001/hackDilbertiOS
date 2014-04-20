@@ -19,12 +19,27 @@
 @implementation DEMOFirstViewController
 
 -(void)viewDidLoad {
+    /* * * * * * * * * * * * * * * * *
+     * Validating User
+     * * * * * * * * * * * * * * * * */
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"role"] isEqualToString:@""]) {
         SigninViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"signin"];
         [self.navigationController presentViewController:controller animated:NO completion:nil];
     }
-    self.view.backgroundColor = [UIColor coolBlue];
+    
+    /* * * * * * * * * * * * * * * * *
+     * UIView Customization
+     * * * * * * * * * * * * * * * * */
+    self.view.backgroundColor = [UIColor coolLightGray];
     self.eventFeeder.backgroundColor = [UIColor clearColor];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor coolPurple]];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTranslucent:YES];
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+    
+    /* * * * * * * * * * * * * * * * *
+     * Data For the UITableView
+     * * * * * * * * * * * * * * * * */
     eventArray = [@[@"hello", @"this", @"is"] mutableCopy];
 
 }
